@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing | Hotel Nova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="brand">
+        <div class="brand-icon">♨</div>
+
+        <div class="brand-text">
+            <h2>HOTEL <span>NOVA</span></h2>
+            <p>LUXURY & COMFORT</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="customers.html">Customers</a>
+        <a href="billing.html" class="active">Billing</a>
+        <a href="report.html">Reports</a>
+    </nav>
+
+    <a href="login.html" class="nav-login">♙ Login</a>
+
+</header>
+
+
+<section class="page-hero small-hero">
+
+    <div class="page-hero-content">
+
+        <div class="section-label">
+            <span></span>
+            HOTEL NOVA
+        </div>
+
+        <h1>Guest <strong>Billing</strong></h1>
+
+        <p>
+            Generate and manage guest invoices with ease.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="billing-section">
+
+    <div class="billing-container">
+
+
+        <div class="billing-form">
+
+            <div class="section-label">
+                <span></span>
+                BILLING
+            </div>
+
+            <h2>Generate Invoice</h2>
+
+            <p class="form-subtitle">
+                Enter the guest stay details to calculate the bill.
+            </p>
+
+
+            <div class="input-group">
+
+                <label>Customer Name</label>
+
+                <input
+                    type="text"
+                    id="billCustomer"
+                    placeholder="Enter customer name"
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label>Room Price / Night</label>
+
+                    <input
+                        type="number"
+                        id="roomPrice"
+                        placeholder="₹ Price"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Number of Nights</label>
+
+                    <input
+                        type="number"
+                        id="nights"
+                        placeholder="Number of nights"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Additional Charges</label>
+
+                <input
+                    type="number"
+                    id="extraCharges"
+                    placeholder="₹ Additional charges"
+                >
+
+            </div>
+
+
+            <button class="submit-button" onclick="generateBill()">
+                Generate Bill →
+            </button>
+
+        </div>
+
+
+        <div class="invoice-card">
+
+            <div class="invoice-top">
+
+                <div>
+                    <p>HOTEL</p>
+                    <h2>NOVA</h2>
+                </div>
+
+                <span>INVOICE</span>
+
+            </div>
+
+
+            <div class="invoice-line"></div>
+
+
+            <div class="invoice-details">
+
+                <p>
+                    <span>Customer</span>
+                    <strong id="invoiceCustomer">Guest Name</strong>
+                </p>
+
+                <p>
+                    <span>Room Charges</span>
+                    <strong id="invoiceRoom">₹0</strong>
+                </p>
+
+                <p>
+                    <span>Additional Charges</span>
+                    <strong id="invoiceExtra">₹0</strong>
+                </p>
+
+            </div>
+
+
+            <div class="invoice-total">
+
+                <span>Total Amount</span>
+
+                <strong id="invoiceTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="paid-badge">
+                PAYMENT STATUS: PENDING
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 Hotel Nova. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

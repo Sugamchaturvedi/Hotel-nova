@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Nova | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            HOTEL <span>NOVA</span>
+        </div>
+
+        <div class="admin-profile">
+            <div class="profile-icon">A</div>
+            <div>
+                <strong>Admin</strong>
+                <small>Administrator</small>
+            </div>
+        </div>
+
+        <nav class="side-nav">
+            <a href="dashboard.html" class="side-active">▣ Dashboard</a>
+            <a href="rooms.html">▤ Rooms</a>
+            <a href="booking.html">▣ Booking</a>
+            <a href="customers.html">♙ Customers</a>
+            <a href="billing.html">₹ Billing</a>
+            <a href="report.html">▥ Revenue</a>
+        </nav>
+
+        <a href="index.html" class="logout">↪ Logout</a>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+        <div class="dashboard-header">
+            <div>
+                <p class="section-label">HOTEL MANAGEMENT</p>
+                <h1>Dashboard</h1>
+                <p>Welcome back, Admin!</p>
+            </div>
+
+            <div class="dashboard-date">
+                September 2026
+            </div>
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">▤</div>
+                <div>
+                    <span>Total Rooms</span>
+                    <h2>50</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">▣</div>
+                <div>
+                    <span>Booked Rooms</span>
+                    <h2>18</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✓</div>
+                <div>
+                    <span>Available Rooms</span>
+                    <h2>32</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">₹</div>
+                <div>
+                    <span>Total Revenue</span>
+                    <h2>₹2.5L</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-box">
+
+                <div class="box-header">
+                    <h2>Recent Bookings</h2>
+                    <a href="booking.html">View All</a>
+                </div>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <tr>
+                            <th>Customer</th>
+                            <th>Room</th>
+                            <th>Check In</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tr>
+                            <td>Rahul Sharma</td>
+                            <td>101</td>
+                            <td>05 Sep 2026</td>
+                            <td><span class="status confirmed">Confirmed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Priya Singh</td>
+                            <td>202</td>
+                            <td>06 Sep 2026</td>
+                            <td><span class="status confirmed">Confirmed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Amit Kumar</td>
+                            <td>301</td>
+                            <td>07 Sep 2026</td>
+                            <td><span class="status paid">Checked In</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Neha Verma</td>
+                            <td>205</td>
+                            <td>08 Sep 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="dashboard-box">
+
+                <div class="box-header">
+                    <h2>Room Status</h2>
+                </div>
+
+                <div class="room-status">
+                    <div>
+                        <span>Occupied</span>
+                        <strong>18</strong>
+                    </div>
+
+                    <div>
+                        <span>Available</span>
+                        <strong>32</strong>
+                    </div>
+
+                    <div>
+                        <span>Maintenance</span>
+                        <strong>4</strong>
+                    </div>
+                </div>
+
+                <div class="occupancy">
+                    <div class="occupancy-top">
+                        <span>Occupancy Rate</span>
+                        <strong>36%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

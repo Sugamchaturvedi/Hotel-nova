@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers | Hotel Nova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="brand">
+        <div class="brand-icon">♨</div>
+
+        <div class="brand-text">
+            <h2>HOTEL <span>NOVA</span></h2>
+            <p>LUXURY & COMFORT</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="customers.html" class="active">Customers</a>
+        <a href="billing.html">Billing</a>
+        <a href="report.html">Reports</a>
+    </nav>
+
+    <a href="login.html" class="nav-login">♙ Login</a>
+
+</header>
+
+
+<section class="page-hero small-hero">
+
+    <div class="page-hero-content">
+
+        <div class="section-label">
+            <span></span>
+            HOTEL NOVA
+        </div>
+
+        <h1>Our <strong>Customers</strong></h1>
+
+        <p>
+            Manage guest information quickly and easily.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-section">
+
+    <div class="dashboard-title">
+
+        <div>
+
+            <div class="section-label">
+                <span></span>
+                CUSTOMER MANAGEMENT
+            </div>
+
+            <h2>Guest Directory</h2>
+
+        </div>
+
+        <button class="gold-button small-button"
+                onclick="showCustomerForm()">
+            + Add Customer
+        </button>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-icon">♙</div>
+            <div>
+                <p>Total Customers</p>
+                <h3 id="customerCount">0</h3>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">▣</div>
+            <div>
+                <p>Active Guests</p>
+                <h3>12</h3>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">★</div>
+            <div>
+                <p>VIP Guests</p>
+                <h3>4</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="table-card">
+
+        <div class="table-header">
+
+            <div>
+                <h3>Customer Details</h3>
+                <p>View and manage registered guests.</p>
+            </div>
+
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Search customer..."
+                onkeyup="searchCustomers()"
+                id="customerSearch"
+            >
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer Name</th>
+                        <th>Phone</th>
+                        <th>Room</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="customerTable">
+
+                    <tr>
+                        <td>C001</td>
+                        <td>Rahul Sharma</td>
+                        <td>9876543210</td>
+                        <td>Deluxe Room</td>
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button class="delete-button">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>C002</td>
+                        <td>Ananya Singh</td>
+                        <td>9876501234</td>
+                        <td>Luxury Suite</td>
+                        <td>
+                            <span class="status active-status">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button class="delete-button">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 Hotel Nova. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Hotel Nova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="brand">
+        <div class="brand-icon">♨</div>
+
+        <div class="brand-text">
+            <h2>HOTEL <span>NOVA</span></h2>
+            <p>LUXURY & COMFORT</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="customers.html">Customers</a>
+        <a href="billing.html">Billing</a>
+        <a href="report.html" class="active">Reports</a>
+    </nav>
+
+    <a href="login.html" class="nav-login">♙ Login</a>
+
+</header>
+
+
+<section class="page-hero report-hero">
+
+    <div class="page-hero-content">
+
+        <div class="section-label">
+            <span></span>
+            HOTEL NOVA
+        </div>
+
+        <h1>Business <strong>Reports</strong></h1>
+
+        <p>
+            Track hotel performance, bookings, occupancy and revenue.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="report-section">
+
+    <div class="report-container">
+
+        <div class="report-heading">
+
+            <div>
+
+                <div class="section-label">
+                    <span></span>
+                    PERFORMANCE OVERVIEW
+                </div>
+
+                <h2>Hotel Dashboard</h2>
+
+                <p>
+                    A quick overview of Hotel Nova's current performance.
+                </p>
+
+            </div>
+
+            <button class="gold-button" onclick="window.print()">
+                Print Report
+            </button>
+
+        </div>
+
+
+        <div class="report-stats">
+
+            <div class="report-stat-card">
+
+                <div class="report-stat-icon">
+                    ₹
+                </div>
+
+                <div>
+                    <p>Total Revenue</p>
+                    <h3>₹2,48,500</h3>
+                    <span class="growth">↑ 12.5% this month</span>
+                </div>
+
+            </div>
+
+
+            <div class="report-stat-card">
+
+                <div class="report-stat-icon">
+                    🛏
+                </div>
+
+                <div>
+                    <p>Total Rooms</p>
+                    <h3>48</h3>
+                    <span class="normal-text">
+                        Hotel capacity
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="report-stat-card">
+
+                <div class="report-stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Booked Rooms</p>
+                    <h3>32</h3>
+                    <span class="growth">
+                        66.7% occupancy
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="report-stat-card">
+
+                <div class="report-stat-icon">
+                    ♙
+                </div>
+
+                <div>
+                    <p>Total Customers</p>
+                    <h3>126</h3>
+                    <span class="normal-text">
+                        Registered guests
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="report-grid">
+
+
+            <div class="report-card">
+
+                <div class="report-card-header">
+
+                    <div>
+                        <h3>Monthly Revenue</h3>
+                        <p>Revenue generated during 2026</p>
+                    </div>
+
+                    <span class="year-badge">
+                        2026
+                    </span>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="chart-row">
+                        <span>Jan</span>
+                        <div class="chart-bar">
+                            <div style="width:45%"></div>
+                        </div>
+                        <strong>₹32K</strong>
+                    </div>
+
+                    <div class="chart-row">
+                        <span>Feb</span>
+                        <div class="chart-bar">
+                            <div style="width:58%"></div>
+                        </div>
+                        <strong>₹41K</strong>
+                    </div>
+
+                    <div class="chart-row">
+                        <span>Mar</span>
+                        <div class="chart-bar">
+                            <div style="width:70%"></div>
+                        </div>
+                        <strong>₹52K</strong>
+                    </div>
+
+                    <div class="chart-row">
+                        <span>Apr</span>
+                        <div class="chart-bar">
+                            <div style="width:62%"></div>
+                        </div>
+                        <strong>₹46K</strong>
+                    </div>
+
+                    <div class="chart-row">
+                        <span>May</span>
+                        <div class="chart-bar">
+                            <div style="width:82%"></div>
+                        </div>
+                        <strong>₹61K</strong>
+                    </div>
+
+                    <div class="chart-row">
+                        <span>Jun</span>
+                        <div class="chart-bar">
+                            <div style="width:76%"></div>
+                        </div>
+                        <strong>₹56K</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="report-card occupancy-card">
+
+                <div class="report-card-header">
+
+                    <div>
+                        <h3>Room Occupancy</h3>
+                        <p>Current room availability</p>
+                    </div>
+
+                </div>
+
+
+                <div class="occupancy-circle">
+
+                    <div>
+                        <strong>67%</strong>
+                        <span>Occupied</span>
+                    </div>
+
+                </div>
+
+
+                <div class="occupancy-details">
+
+                    <div>
+                        <span class="dot occupied-dot"></span>
+                        <p>Booked Rooms</p>
+                        <strong>32</strong>
+                    </div>
+
+                    <div>
+                        <span class="dot available-dot"></span>
+                        <p>Available Rooms</p>
+                        <strong>16</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="report-card room-performance">
+
+            <div class="report-card-header">
+
+                <div>
+                    <h3>Room Performance</h3>
+                    <p>Performance by room category</p>
+                </div>
+
+            </div>
+
+
+            <div class="performance-grid">
+
+                <div class="performance-item">
+
+                    <div class="performance-top">
+
+                        <span>Single Room</span>
+
+                        <strong>72%</strong>
+
+                    </div>
+
+                    <div class="performance-progress">
+                        <div style="width:72%"></div>
+                    </div>
+
+                    <small>
+                        8 rooms booked
+                    </small>
+
+                </div>
+
+
+                <div class="performance-item">
+
+                    <div class="performance-top">
+
+                        <span>Double Room</span>
+
+                        <strong>81%</strong>
+
+                    </div>
+
+                    <div class="performance-progress">
+                        <div style="width:81%"></div>
+                    </div>
+
+                    <small>
+                        10 rooms booked
+                    </small>
+
+                </div>
+
+
+                <div class="performance-item">
+
+                    <div class="performance-top">
+
+                        <span>Deluxe Room</span>
+
+                        <strong>76%</strong>
+
+                    </div>
+
+                    <div class="performance-progress">
+                        <div style="width:76%"></div>
+                    </div>
+
+                    <small>
+                        7 rooms booked
+                    </small>
+
+                </div>
+
+
+                <div class="performance-item">
+
+                    <div class="performance-top">
+
+                        <span>Luxury Suite</span>
+
+                        <strong>90%</strong>
+
+                    </div>
+
+                    <div class="performance-progress">
+                        <div style="width:90%"></div>
+                    </div>
+
+                    <small>
+                        5 suites booked
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="report-card recent-report">
+
+            <div class="report-card-header">
+
+                <div>
+                    <h3>Recent Bookings</h3>
+                    <p>Latest hotel reservations</p>
+                </div>
+
+                <a href="booking.html" class="view-link">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Customer</th>
+                            <th>Room</th>
+                            <th>Check In</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#HN1001</td>
+
+                            <td>
+                                Rahul Sharma
+                            </td>
+
+                            <td>
+                                Deluxe Room
+                            </td>
+
+                            <td>
+                                05 Sep 2026
+                            </td>
+
+                            <td>
+                                ₹13,500
+                            </td>
+
+                            <td>
+                                <span class="status confirmed-status">
+                                    Confirmed
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#HN1002</td>
+
+                            <td>
+                                Ananya Singh
+                            </td>
+
+                            <td>
+                                Luxury Suite
+                            </td>
+
+                            <td>
+                                07 Sep 2026
+                            </td>
+
+                            <td>
+                                ₹22,500
+                            </td>
+
+                            <td>
+                                <span class="status confirmed-status">
+                                    Confirmed
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>#HN1003</td>
+
+                            <td>
+                                Arjun Kumar
+                            </td>
+
+                            <td>
+                                Double Room
+                            </td>
+
+                            <td>
+                                08 Sep 2026
+                            </td>
+
+                            <td>
+                                ₹10,500
+                            </td>
+
+                            <td>
+                                <span class="status pending-status">
+                                    Pending
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 Hotel Nova. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>

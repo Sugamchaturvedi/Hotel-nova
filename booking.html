@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Hotel Nova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="brand">
+        <div class="brand-icon">♨</div>
+        <div class="brand-text">
+            <h2>HOTEL <span>NOVA</span></h2>
+            <p>LUXURY & COMFORT</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="customers.html">Customers</a>
+        <a href="billing.html">Billing</a>
+        <a href="report.html">Reports</a>
+    </nav>
+
+    <a href="login.html" class="nav-login">♙ Login</a>
+
+</header>
+
+
+<section class="page-hero small-hero">
+
+    <div class="page-hero-content">
+
+        <div class="section-label">
+            <span></span>
+            HOTEL NOVA
+        </div>
+
+        <h1>Reserve Your <strong>Stay</strong></h1>
+
+        <p>
+            Complete your reservation in just a few simple steps.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="form-section">
+
+    <div class="booking-container">
+
+        <div class="form-intro">
+
+            <div class="section-label">
+                <span></span>
+                RESERVATION
+            </div>
+
+            <h2>Book Your Room</h2>
+
+            <p>
+                Fill in your details below and choose your preferred
+                room and stay dates.
+            </p>
+
+            <div class="booking-benefits">
+
+                <div>✓ Best Available Rates</div>
+                <div>✓ Comfortable Rooms</div>
+                <div>✓ 24/7 Guest Support</div>
+                <div>✓ Easy Cancellation</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="luxury-form">
+
+            <div class="form-title">
+                <h3>Reservation Details</h3>
+                <span>HOTEL NOVA</span>
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your full name"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter phone number"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label>Room Type</label>
+
+                    <select id="roomType">
+
+                        <option value="">Select Room</option>
+                        <option>Single Room</option>
+                        <option>Double Room</option>
+                        <option>Deluxe Room</option>
+                        <option>Executive Room</option>
+                        <option>Family Room</option>
+                        <option>Luxury Suite</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Number of Guests</label>
+
+                    <select id="guests">
+
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label>Check In</label>
+
+                    <input type="date" id="checkin">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Check Out</label>
+
+                    <input type="date" id="checkout">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Special Request</label>
+
+                <textarea
+                    id="request"
+                    placeholder="Any special request..."
+                ></textarea>
+
+            </div>
+
+
+            <button class="submit-button" onclick="makeBooking()">
+                Confirm Reservation →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 Hotel Nova. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
